@@ -3,13 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: lox;
+    font-family: 'Lexend Deca', sans-serif;
     text-decoration: none;
     list-style: none;
-}
-@font-face{
-    font-family: lox;
-    src: url(/assets/LexendDeca-VariableFont_wght.ttf);
 }
 /* hero section start */
 /*  header start */
