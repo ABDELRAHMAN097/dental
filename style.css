@@ -7,6 +7,20 @@
     text-decoration: none;
     list-style: none;
 }
+h3{
+    color: #142349;
+    font-size: 48px;
+}
+span{
+    color: #4268d2;
+}
+p{
+    color: #616A85;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
 /* hero section start */
 /*  header start */
 header{
@@ -54,6 +68,7 @@ nav a{
     font-size: 15px;
     /* margin: 0 10px; */
     margin-left: 25px;
+    text-decoration: none;
 }
 nav button{
     font-size: 12px;
@@ -327,6 +342,7 @@ position: relative;
     align-items: center;
     overflow: hidden;
     border-bottom: #616a85 1px solid;
+    padding: 0 30px 20px 30px;
 }
 .cbtion h3{
     padding: 20px;
@@ -338,37 +354,39 @@ position: relative;
 .Impressions{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 130px 30px;
+    padding: 40px 30px;
     gap: 2rem;
 }
 .Impressions .Impressions-img , .Impressions .Impressions-text{
-    width: calc((100% - 2rem) / 2);
+    width: calc((90% - 2rem) / 2);
 }
 .Impressions .Impressions-img{
     position: relative;
     /* border: #142349 1px solid; */
-    height: 63vh;
-}
-.Impressions .Impressions-img .teeth{
-    position: absolute;
-    z-index: -1;
-    width: 99%;
-    top: 0;
-    left: 0;
-}
+    height: 84vh;
+    background-image: url(assets/image/dentalRepair.png);
+    background-size: cover;
+    background-position: center center;
+    padding: -2px;
+    min-width: 500px;
+} 
+
 .Impressions .Impressions-img .mark{
     position: absolute;
     width: 100px;
     bottom: 0;
-    right: 3rem;
+    right: 4rem;
 }
 .Impressions .Impressions-text{
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 1rem;
+    min-width: 400px;
 }
 .Impressions .Impressions-text h2{
     color: #142349;
@@ -382,14 +400,380 @@ position: relative;
 
 }
 /* Dental repair end */
-
-@media screen and (max-width: 767px){
-    .Impressions{
-        display: flex;
-        /* align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        padding: 130px 30px;
-        gap: 2rem; */
+/* We Do start */
+.we-do{
+    background-image: url(assets/image/main-bg.png);
+    width: 100%;
+    height: calc(100vh + 230px);
+    background-position: center center;
+    background-size: cover;
+}
+.we-filter{
+    width: 100%;
+    height: calc(100vh + 230px);
+    background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width:990px) {
+    .we-filter{   
+        height: calc(100vh + 895px);
+    }
+    .we-do{
+        height: calc(100vh + 895px);
+    }
+    .our-team{
+        height: calc(100vh + 895px);
     }
 }
+.we-text{
+    margin: 30px 0 30px 0;
+}
+.we-text h3{
+ color: #142349;
+ color: #142349;
+    font-size: 46px;
+    max-width: 600px;
+    margin: auto;
+}
+.we-text span{
+ color: #4268d2;
+}
+.we-text p{
+    color: #616a85;
+    max-width: 500px;
+    margin: auto;
+}
+.treatment{
+    text-align: center;
+}
+.caree{
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.get{
+    position: relative;
+    background-color: #4268d2;
+    padding: 50px 25px;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 90px;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 500px;
+}
+.get h3{
+    color: #fff;
+    font-size: 29px;
+    max-width: 580px;
+    text-align: start;
+}
+.get span{
+    color: #fff;
+}
+.get .toth{
+   position: absolute;
+    width: 109px;
+    bottom: 10px;
+    right: 25px;
+}
+.Emergency{
+    background-color: #fff;
+    display: flex;
+    min-width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    padding: 17px;
+    height: 12rem;
+    justify-content: center;
+}
+.Emergency img{
+    width: 45px;
+    padding-bottom: 5px;
+}
+.Emergency h3{
+
+}
+.Emergency p{
+    color:#616a85;
+    text-align: start;
+    max-width: 335px;
+}
+.General{
+    display: flex;
+    padding: 30px 0;
+    text-align: center;
+    justify-content: center;
+}
+.General img{
+    width: 50px;
+    padding-bottom: 15px;
+    text-align: start;
+}
+.General h3{
+    font-size: 17px;
+}
+.General p{
+    color: #616a85;
+    text-align: start;
+    max-width: 335px;
+}
+.three{
+    background-color: #fff;
+    margin: 1rem;
+    min-width: 280px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* We Do end */
+/* our-team start */
+.our-team{
+    width: 100%;
+    height: calc(100vh + 897px);
+    background: linear-gradient(180deg , rgba(231, 231, 231, 0.945) , #a6eeea , rgba(231, 231, 231, 0.945));
+    /* text-align: start; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 66px 0;
+}
+.our-team h1{
+    color: #142349;
+}
+.our-team span{
+    color: #4268d2;
+}
+.our-team p{
+    color: #616a85;
+}
+.doctor{
+    text-align: center;
+}
+.doctor img{
+    width: 200px;
+    background-size: cover;
+}
+.doctor p{
+    color: #000;
+}
+.team{
+    padding-top: 30px;
+    border: none;
+}
+.our-1{
+    /* border: #142349 2px solid; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.our-1 h3{
+    font-size: 40px;
+    text-align: start;
+}
+.our-1 span{
+   color: #4268d2;
+}
+.our-1 p{
+    line-height: 24px;
+    color: #616a85;
+    font-size: 18px;
+    min-width: 250px;
+    text-align: start;
+ }
+.our-1 button{
+    color: #fff;
+    background-color: #4268d2;
+    font-size: 18px;
+    width: 110px;
+    height: 39px; 
+    border-radius: 22px;
+    outline: 0;
+    border: 1px  #4268d2 solid;
+}
+.stars{
+    background-color: #fff;
+    border-top-right-radius: 90px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.stars .star-icone{
+    color:  #FFC861;;
+}
+.stars p{
+    color: #616A85;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+.nurse{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.stars .nurse img{
+    width: 48px;
+    object-fit: cover;
+}
+.nurse .nurse-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.nurse-info h3{
+    font-size: 15px;
+}
+.nurse-info span{
+    font-size: 12px;
+}
+.mr{
+    margin-top: 100px;
+}
+/* our-team end */
+/* Our Clinic start */
+.OurClinic{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.OurClinic .OurClinic-tex h3{
+    font-size: 48px;
+}
+.OurClinic .Choose{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+.OurClinic .Choose img{
+    width: 40px;
+}
+.Choose .Choose-tex h3{
+font-size: 20px;
+}
+.Choose .Choose-tex p{
+font-size: 17px;
+}
+.OurClinic-img{
+    background-image: url(assets/image/dentalRepair.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Our Clinic end */
+/* First Visit start */
+.First-Visit{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.last{
+    width: 100%;
+    height: 80vh;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    background-color: #044bffda;
+}
+.First-Visit .last .cover{
+    position: relative;
+    background-image: url(assets/image/94tgj4t.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.First-Visit .last .cover h1{
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+}
+.First-Visit .last .cover span{
+    color: #92c1fa;
+}
+.First-Visit .last .cover p{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6em;
+    max-width: 67%;
+}
+.First-Visit .last .cover button{
+    color: #4268d2;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    width: 130px;
+    height: 50px;
+    border-radius: 22px;
+    outline: 0;
+    border: 1px #4268d2 solid;
+    padding: 4px;
+}
+.cover .nu{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+.cover .nu img{
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    width: 200px;
+    bottom: 0;
+}
+@media screen and (max-width:900px) {
+    .cover .nu img{
+        width: 150px;
+    }
+}
+@media screen and (max-width:550px) {
+    .cover .nu img{
+        width: 100px;
+    }
+}
+
+
+
+

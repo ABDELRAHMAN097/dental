@@ -9,6 +9,23 @@ function switching(){
 icon.addEventListener("click",switching);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const swiper = new Swiper('.swiper', {
     loop: true,
     pagination: {
