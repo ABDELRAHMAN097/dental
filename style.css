@@ -1359,7 +1359,7 @@ align-items: center;
 /* Medical-team end */
 .or{
     width: 100%;
-    background:linear-gradient(180deg , rgb(230, 252, 252) , rgb(184, 241, 252) , white) ;
+    background:linear-gradient(180deg , rgb(230, 252, 252) , rgb(218, 249, 255) , white) ;
 }
 .map{
     width: 100%; 
@@ -1374,12 +1374,212 @@ align-items: center;
     height: 500px;
     filter: invert(100%);
 }
+/* shop start */
+.main-img{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    background: url(assets/image/bg.png) no-repeat;
+    background-size:cover ;
+    background-position:center;
+    background-attachment:fixed
+}
+.main-filter{
+    background-color: #142349cb;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-filter .text{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+.main-img .main-filter .text h2{
+    color: #fff;
+    text-align: center;
+    font-size: 46px;
+}
+.main-img .main-filter .text h3{
+    color: #92c1fa;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+.main-img .main-filter .text span{
+    color: #fff;
+}
+/* shop end */
+/* Showing start */
+.Showing{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Showing p{
+    color: #6978a9;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.Showing button{
+    border-radius: 20px;
+    outline: none;
+    border: #616A85 1px solid;
+    padding: 10px;
+    font-size: 10px;
+    margin-right: 20px;
+}
+/* Showing end */
+.text-tool{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    gap: 5px;
+    padding: 10px;
+}
+.text-tool h3{
+    font-size: 15px;
+}
+.text-doctor span i{
+    color: #142349;
+}
+/* Drop us start */
+.Drop-us{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #e0f5fa;
+}
+.Drop-us form{
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 20px;
+    max-width: 463px;
+    margin: auto;
+    border-radius: 15px;
+}
+.Drop-us h2{
+    
+}
+.Drop-us label{
+    
+}
+.Drop-us input , textarea{
+    width: 100%;
+    border: #4d5e87 1px solid;
+    border-radius: 15px;
+    height: 45px;
+}
+.Drop-us textarea{
+    height: 300px;
+}
+.Drop-us button{
+    background-color: #4268d2;
+    color: #fff;
+    border-radius: 15px;
+    height: 38px;
+    width: 112px;
+    border: none;
+    outline: none;
+}
+.Drop-us .Line{
+    max-width: 500px;
+    margin: auto;
+    /* border: #4d5e87 7px solid; */
+    background-image: url(assets/image/ig.png);
+    height: 682px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+}
+@media screen and (max-width:992px) {
+    .Drop-us .Line{
+        margin-top: 20px;
+    }
+}
+/* Drop us end */
+/* Dantal calling start */
+.find-our{
+    background-image: url(assets/image/main-bg.png);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.find-our .filter{
+    padding: 50px;
+    width: 100%;
+    height: 200vh;
+    background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 
 
+.Dantal-calling{
+    width: 100%;
+    background: linear-gradient(180deg , #fff , #d7e0f7) ;
+    padding: 50px;
+}
+.Dantal-calling .call{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 30px;
+    gap: 10px;
+}
+
+.Dantal-calling .call .icon i{
+    font-size: 30px;
+    color: #142349;
+}
+.Find-Our{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+}
+.text-our {
+
+}
+.text-our h3{
+
+}
+.text-our-p{
+max-width: 400px;
+}
+.Find-Our .text-our-p p{
+
+}
 
 
-
-
+/* Dantal calling end */
 
 
 
