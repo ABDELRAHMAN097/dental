@@ -177,6 +177,7 @@ position: relative;
     background-size: cover;
 }
 .filter{
+    position: relative;
     width: 100%;
     height: calc(100vh + 230px);
     background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
@@ -205,7 +206,7 @@ position: relative;
         color: #6b6969;
     }
     header .logo img {
-        width: 133px;
+        width: 111px;
     }
     .hero-section{
         height: calc(100vh + 280px);
@@ -776,9 +777,15 @@ font-size: 17px;
 .fees-section{
     background-image: url(assets/image/main-bg.png);
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
     background-position: center center;
     background-size: cover;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
 }
 .filter-fees{
     width: 100%;
@@ -794,8 +801,8 @@ font-size: 17px;
     margin-top: 70px;
 }
 .fees-intro h1{
-    font-size: 60px;
-    max-width: 600px;
+    font-size: 52px;
+    max-width: 463px;
     text-align: center;
     font-weight: 600;
 }
@@ -804,15 +811,15 @@ font-size: 17px;
     text-align: center;
 }
 .GeneralDental{
-    height: 300vh;
+    /* height: 300vh; */
     width: 100%;
-    background: linear-gradient(180deg , rgb(255, 255, 255) , rgb(174, 237, 248) ,rgb(255, 255, 255)); 
+    background: linear-gradient(180deg , rgb(255, 255, 255) , rgb(174, 237, 248) ,rgb(255, 255, 255));
 }
 .tap{
     background-color: #fcfcfc;
     padding: 20px;
     border-radius: 30px;
-    height: 90vh;
+    /* height: 90vh; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -828,14 +835,12 @@ font-size: 17px;
 }
 .rows p{
 
+font-size: 16px;
 }
 .rows hr{
     width: 60%;
     height: 4px;
     color: #616a85;
-}
-.tap3{
-    height: 65vh;
 }
 @media screen and (max-width:380px) {
     .tap3{
@@ -847,7 +852,6 @@ font-size: 17px;
 }
 @media screen and (max-width:767px) {
     .tap{
-        height: 100vh;
         gap: 5px;
     }
     .head-tap h3{
@@ -856,34 +860,38 @@ font-size: 17px;
 }
 @media screen and (max-width:550px) {
     .tap{
-        height: 100vh;
         gap: 0px;
     }
     .head-tap h3{
         font-size: 20px;
     }
+    .rows p{
+        font-size: 10px;
+    }
+    
 }
 @media screen and (max-width:780px) {
-    .GeneralDental {
-        height: 350vh;
+    .rows p{
+        font-size: 14px;
     }
+    
 }
 .provide{
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-.goal{
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+.goal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
 }
 .goal h3{
     font-size: 60px;
@@ -917,6 +925,473 @@ font-size: 17px;
         padding: 20px;
     }
 }
+/* treatments start */
+
+.treatments{
+    background-image: url(assets/image/main-bg.png);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.treatments .filter{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.hero-treatments{
+    max-width: 500px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.hero-treatments h3{
+    line-height: 55px;
+}
+/* treatments end */
+/* cosmetic start */
+
+.cosmetic{
+    width: 100%;
+    padding: 70px 0;
+}
+.cosmetic .image{
+    background-size: cover;
+    margin-bottom: 2rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.cosmetic .image .layers{
+    position: relative;
+}
+.cosmetic .image .layers img{
+    max-width: 454px;
+    margin-top: 40px;
+}
+.cosmetic .image .layers .seal{
+    position: absolute;
+    width: 75px;
+    bottom: 0;
+    right: 3rem;
+}
+/* *** */
+.cosmetic-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 109px;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-left: 48px;
+}
+.cosmetic-text h3{
+    max-width: 300px;
+    font-size: 27px;
+    font-weight: 600;
+}
+.cosmetic-text p{
+    max-width: 350px;
+    font-size: 15px;
+} 
+
+/* cosmetic end */
+/* available start */
+.available{
+    background: linear-gradient(90deg , white , rgb(159, 215, 238));
+    width: 100%;
+    padding: 40px 0;
+}
+.available-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.available h3{
+    max-width: 500px;
+}
+.available p{
+    max-width: 500px;
+}
+
+.text-ava{
+    background-color: #054bfda4;
+    border-top-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    max-width: 700px;
+}
+.ava-filter{
+    background-image: url(assets/image/94tgj4t.png);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    border-top-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    position: relative;
+    max-width: 700px;
+}
+.ava-filter h3{
+    font-size: 42px;
+    max-width: 600px;
+    color: #fff;
+}
+.ava-filter span{
+    color: #fff;
+}
+.text-available span{
+    color: #fff;
+}
+.ava-filter img{
+    position: absolute;
+    position: absolute;
+    width: 100px;
+    bottom: 1rem;
+    right: 2rem;
+}
+@media screen and (max-width:400px){
+    .cosmetic-text{
+        margin-left: 35px;
+    }
+}
+@media screen and (max-width:550px) {
+    .hero-treatments h3{
+        line-height: 55px;
+        font-size: 28px;
+    }
+    .hero-treatments p{
+        font-size: 18px;
+    }
+    .cosmetic {
+        margin-top: 100px;
+    }
+    .cosmetic .image .layers img {
+        max-width: 295px;
+    }
+    .available h3 {
+        font-size: 33px;
+        max-width: 400px;
+    }
+    .available p {
+        max-width: 415px;
+    }
+    .ava-filter img {
+        width: 70px;
+    }
+    .Dentistry{
+        margin-top: 20px;
+    }
+   
+    
+}
+@media screen and (max-width:990px){
+    .cosmetic-text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;    
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 10px 20px 20px 20px;
+        max-width: 417px;   
+    }
+    .Dentistry{
+        margin: 20px;
+    }
+}
+.Dentistry{
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+    gap: 5px;
+    max-width: 700px;
+    margin: 5px;
+}
+.Dentistry img{
+    width: 40px;
+}
+.Dentistry h3{
+    font-size: 30px;
+}
+.Dentistry p{
+    max-width: 300px;
+}
+/* available end */
+/* numbers start */
+.num{
+    position: relative;
+    margin: 20px;
+    padding: 5px 20px;
+    text-align: center;
+}
+.num h3{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50% , -50%);
+ font-size: 30px;
+}
+.num p{
+    font-size: 160px;
+    color: #4268d244;
+    text-align: center;
+}
+/* numbers end */
+
+.Different-co{
+    background-image: url(assets/image/main-bg.png);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.Different-co .filter{
+    width: 100%;
+    background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+}
+.Different{
+    padding: 21px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.Different h3{
+    max-width: 600px;
+    text-align: center;
+}
+.Different p{
+    max-width: 600px;
+    text-align: center;
+}
+.Different .photo{
+    max-width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.Different .photo img{
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.logos{
+text-align: center;
+}
+.logos .logo img{
+    max-width: 120px;
+    margin: 9px;
+}
+/* answered start */
+.answered{
+
+width: 100%;
+
+padding: 40px 0;
+
+display: flex;
+
+flex-direction: row;
+
+flex-wrap: wrap;
+
+justify-content: center;
+
+align-items: center;
+}
+.answered-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.answered-text h3{
+    font-size: 30px;
+    max-width: 600px;
+}
+.answered-text p{
+    max-width: 400px;
+    
+}
+.answered-text p i{
+    color: #142349;
+    margin: 4px;
+}
+.answered-img{
+    width: 90%;
+    margin: auto;
+}
+.answered-img img{
+    max-width: 432px;
+    object-fit: cover;
+    background-size: cover;
+}
+@media screen and (max-width:550px){
+    .answered-img img {
+        max-width: 320px;
+    }
+}
+/* answered end */
+/* Medical-team sart */
+.Medical-team{
+    background-image: url(assets/image/main-bg.png);
+    width: 100%;
+    
+    background-position: center center;
+    background-size: cover;
+}
+.medical-filtar{
+    width: 100%;
+   
+    background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
+    
+    
+}
+.text-mecical{
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+.view{
+    width: 100%;
+    margin: 25px;
+    border-radius: 12px;
+    
+}
+.view .doctor-img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.view .doctor-img img{
+   width: 100%;
+   object-fit: cover;
+   background-size: cover;
+   background-position: center center;
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+.view .text-doctor{
+    background-color: #4268d2;
+    text-align: center;
+    padding: 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.view .text-doctor h3{
+    color: #fff;
+    font-size: 20px;
+}
+.view .text-doctor p{
+    color: #fff;
+    font-size: 20px;
+
+}
+.view .icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.view .icons .ilink{
+    margin: 0 10px;
+    background-color: #142349;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+.view .icons .ilink:hover{
+    background-color: #fff;
+}
+.view .icons .ilink i{
+    font-size: 20px;
+    color: #3391a8;
+    transition: all ease 0.5s;
+
+}
+.view .icons .ilink i:hover{
+    color: #142349;
+}
+
+@media screen and (max-width:767px) {
+     .view{
+        width: 300px;
+        margin: auto;
+     }
+}
+@media screen and (max-width:320px) {
+    .view{
+       width: 200px;
+       margin: auto;
+    }
+}
+
+/* Medical-team end */
+.or{
+    width: 100%;
+    background:linear-gradient(180deg , rgb(230, 252, 252) , rgb(184, 241, 252) , white) ;
+}
+.map{
+    width: 100%; 
+    height: 500px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.iframe{
+    width: 100%;
+    height: 500px;
+    filter: invert(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
