@@ -19,13 +19,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- animate cdn -->
-    <link rel="stylesheet" href="animate.css" />
+    <!-- Include animate.css CDN link -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+     />
+    <!-- Include Wow.js CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/wow.js@1.3.0"></script>
+    <!-- Initialize Wow.js -->
+    <script>
+      new WOW().init();
+  </script>
     <title>Dental</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="treatments">
+    <div class="treatments animate__animated animate__bounceIn animate__slower	2s">
       <div class="filter shakeX">
         <header
           class="wow slideInleft"
@@ -59,7 +68,7 @@
         </div>
       </div>
     </div>
-    <div class="or">
+    <div class="or animate__animated animate__bounceIn animate__slower	2s">
       <div class="text-mecical">
         <h3>Meet Our <span>Medical Team</span></h3>
         <p>
@@ -289,10 +298,5 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <!-- wow.js cdn -->
-    <script src="wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
   </body>
 </html>

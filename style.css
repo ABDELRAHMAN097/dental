@@ -350,6 +350,18 @@ position: relative;
     border-top: #616a85 1px solid;
     color: #616a85;
     text-align: center;
+    font-size: 18px
+}
+.swiper-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.swiper-wrapper .swiper-slide img{
+    max-width: 100px;
+    margin: 0;
+    padding: 0;
 }
 /* Dental repair start */
 .Impressions{
@@ -1565,20 +1577,9 @@ align-items: center;
     justify-content: space-between;
     padding: 40px;
 }
-.text-our {
-
-}
-.text-our h3{
-
-}
 .text-our-p{
 max-width: 400px;
 }
-.Find-Our .text-our-p p{
-
-}
-
-
 /* Dantal calling end */
 
 
