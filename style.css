@@ -13,12 +13,17 @@ h3{
 }
 span{
     color: #4268d2;
+    /* max-width: 200px; */
+    /* text-align: start; */
+    margin: auto;
 }
 p{
     color: #616A85;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.6em;
+    max-width: 420px;
+    margin: auto;
 }
 
 /* hero section start */
@@ -66,7 +71,6 @@ nav a{
     font-weight: 600;
     width: 67px;
     font-size: 15px;
-    /* margin: 0 10px; */
     margin-left: 25px;
     text-decoration: none;
 }
@@ -98,14 +102,16 @@ header .icon{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
+}
+.contentHero{
+    width: 100%;
 }
 /* pages eend */
 /* intro start */
 .intro{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-items: flex-start;
     align-items: flex-end;
     justify-content: center;
@@ -182,21 +188,20 @@ position: relative;
     width: 100%;
 }
 .front{
-    
     width: 40%;
 }
 /* intro end */
 .hero-section{
     background-image: url(assets/image/main-bg.png);
     width: 100%;
-    height: calc(100vh + 230px);
+    
     background-position: center center;
     background-size: cover;
 }
 .filter{
     position: relative;
     width: 100%;
-    height: calc(100vh + 230px);
+    
     background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
     display: flex;
     flex-direction: column;
@@ -226,9 +231,6 @@ position: relative;
         width: 111px;
     }
     .hero-section{
-        height: calc(100vh + 280px);
-    }
-    .filter{
         height: calc(100vh + 280px);
     }
     .intro{
@@ -308,7 +310,7 @@ position: relative;
     .text-intro p {
         color: #616a85;
         font-size: 18px;
-        /* max-width: 33rem; */
+        max-width: 22rem;
         text-align: center;
         width: 100%;
         line-height: 30px;
@@ -381,6 +383,11 @@ position: relative;
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width:767px){
+    .swiper-wrapper .swiper-slide img{
+        max-width: 60px;
+    }
+}
 /* Dental repair start */
 .Impressions{
     display: flex;
@@ -435,27 +442,28 @@ position: relative;
 .we-do{
     background-image: url(assets/image/main-bg.png);
     width: 100%;
-    height: calc(100vh + 230px);
+    /* height: calc(100vh + 230px); */
     background-position: center center;
     background-size: cover;
 }
 .we-filter{
     width: 100%;
-    height: calc(100vh + 230px);
+    /* height: calc(100vh + 230px); */
     background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
     text-align: center;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (max-width:990px) {
-    .we-filter{   
-        height: calc(100vh + 895px);
+    .we-filter{
+        /* height: calc(100vh + 895px); */
     }
     .we-do{
-        height: calc(100vh + 895px);
+        /* height: calc(100vh + 895px); */
     }
     .our-team{
         height: calc(100vh + 895px);
@@ -651,6 +659,8 @@ position: relative;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    max-width: 500px;
+    margin: 20px;
 }
 .stars .star-icone{
     color:  #FFC861;;
@@ -690,20 +700,23 @@ position: relative;
 /* our-team end */
 /* Our Clinic start */
 .OurClinic{
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
+    padding: 40px;
+    justify-content: center;
+    gap: 0rem;
 }
 .OurClinic .OurClinic-tex h3{
-    font-size: 48px;
+    font-size: 39px;
+    max-width: 400px;
 }
 .OurClinic .Choose{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
+    gap: 1rem;
 }
 .OurClinic .Choose img{
     width: 40px;
@@ -720,20 +733,29 @@ font-size: 17px;
     width: 100%;
     height: 100%;
 }
-
+@media screen and (max-width: 767px) {
+    .OurClinic .OurClinic-tex h3 {
+        font-size: 27px;
+        max-width: 400px;
+    }
+    .stars{
+        gap: 8rem;
+    }
+}
 /* Our Clinic end */
 /* First Visit start */
 .First-Visit{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 .last{
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     border-top-right-radius: 90px;
     border-bottom-left-radius: 90px;
     background-color: #044bffda;
@@ -744,7 +766,8 @@ font-size: 17px;
     background-position: center center;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
+    padding: 40px;
     border-top-right-radius: 90px;
     border-bottom-left-radius: 90px;
     display: flex;
@@ -756,7 +779,7 @@ font-size: 17px;
 }
 .First-Visit .last .cover h1{
     color: #fff;
-    font-size: 70px;
+    font-size: 28px;
     text-align: center;
 }
 .First-Visit .last .cover span{
@@ -768,15 +791,15 @@ font-size: 17px;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.6em;
-    max-width: 67%;
+    max-width: 82%;
 }
 .First-Visit .last .cover button{
     color: #4268d2;
     background-color: #fff;
     font-size: 20px;
     font-weight: 500;
-    width: 130px;
-    height: 50px;
+    width: 125px;
+    height: 46px;
     border-radius: 22px;
     outline: 0;
     border: 1px #4268d2 solid;
@@ -801,7 +824,7 @@ font-size: 17px;
 }
 @media screen and (max-width:550px) {
     .cover .nu img{
-        width: 100px;
+        width: 89px;
     }
 }
 .fees-section{
@@ -819,7 +842,6 @@ font-size: 17px;
 }
 .filter-fees{
     width: 100%;
-    height: 90vh;
     background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
 }
 .fees-intro{
@@ -828,7 +850,8 @@ font-size: 17px;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    padding-bottom: 30px;
 }
 .fees-intro h1{
     font-size: 52px;
@@ -921,7 +944,7 @@ font-size: 16px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 6%;
+    padding: 20px;
 }
 .goal h3{
     font-size: 60px;
@@ -965,7 +988,6 @@ font-size: 16px;
 }
 .treatments .filter{
     width: 100%;
-    height: 70vh;
     background: linear-gradient(90deg , rgba(234, 243, 255, 0.945) , rgba(247, 249, 255, 0.938));
     display: flex;
     flex-direction: column;
@@ -975,7 +997,7 @@ font-size: 16px;
 
 .hero-treatments{
     max-width: 500px;
-    margin-top: 30px;
+    padding: 0 0 20px 0;
     text-align: center;
     line-height: 40px;
 }
@@ -988,7 +1010,7 @@ font-size: 16px;
 
 .cosmetic{
     width: 100%;
-    padding: 70px 0;
+    padding: 20px 0;
 }
 .cosmetic .image{
     background-size: cover;
@@ -1026,12 +1048,17 @@ font-size: 16px;
     max-width: 300px;
     font-size: 27px;
     font-weight: 600;
+    margin: auto;
 }
 .cosmetic-text p{
-    max-width: 350px;
+    max-width: 302px;
     font-size: 15px;
+    margin: auto;
 } 
-
+.cosmetic-text .ml{
+    text-align: center;
+    width: 400px;
+}
 /* cosmetic end */
 /* available start */
 .available{
@@ -1100,13 +1127,14 @@ font-size: 16px;
 @media screen and (max-width:550px) {
     .hero-treatments h3{
         line-height: 55px;
-        font-size: 28px;
+        font-size: 25px;
+        max-width: 420px;
     }
     .hero-treatments p{
         font-size: 18px;
     }
     .cosmetic {
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
     .cosmetic .image .layers img {
         max-width: 295px;
@@ -1132,11 +1160,10 @@ font-size: 16px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: flex-start;    
-        align-items: flex-start;
         gap: 1rem;
         margin: 10px 20px 20px 20px;
-        max-width: 417px;   
+        max-width: 500px;
+        margin: auto;
     }
     .Dentistry{
         margin: 20px;
@@ -1198,7 +1225,7 @@ font-size: 16px;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    height: 150vh;
+    padding: 10px 0 10px 0px;
 }
 .Different{
     padding: 21px 0;
@@ -1209,12 +1236,13 @@ font-size: 16px;
     justify-content: center;
 }
 .Different h3{
-    max-width: 600px;
+    max-width: 420px;
     text-align: center;
 }
 .Different p{
-    max-width: 600px;
+    max-width: 420px;
     text-align: center;
+    font-size: 15px;
 }
 .Different .photo{
     max-width: 90%;
@@ -1308,6 +1336,10 @@ align-items: center;
     padding: 30px 20px;
     text-align: center;
 }
+.text-mecical p{
+    max-width: 500px;
+    margin: auto;
+}
 .view{
     width: 100%;
     margin: 25px;
@@ -1332,6 +1364,10 @@ align-items: center;
     padding: 20px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+}
+.info-doctor{
+    max-width: 320px;
+    margin: auto;
 }
 .view .text-doctor h3{
     color: #fff;
@@ -1375,8 +1411,12 @@ align-items: center;
 
 @media screen and (max-width:767px) {
      .view{
+
         width: 300px;
         margin: auto;
+     }
+     .gapCards{
+        margin-bottom: 20px;
      }
 }
 @media screen and (max-width:320px) {
@@ -1396,7 +1436,7 @@ align-items: center;
     height: 500px;  
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
 }
 .iframe{
@@ -1599,29 +1639,6 @@ align-items: center;
 max-width: 400px;
 }
 /* Dantal calling end */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
