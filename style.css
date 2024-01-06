@@ -997,7 +997,7 @@ font-size: 16px;
 
 .hero-treatments{
     max-width: 500px;
-    padding: 0 0 20px 0;
+    padding: 15px 0 50px 0;
     text-align: center;
     line-height: 40px;
 }
@@ -1291,6 +1291,13 @@ align-items: center;
 .answered-text h3{
     font-size: 30px;
     max-width: 600px;
+    padding: 20px;
+}
+.top{
+    
+text-align: left;
+    
+padding: 20px;
 }
 .answered-text p{
     max-width: 400px;
@@ -1368,6 +1375,7 @@ align-items: center;
 .info-doctor{
     max-width: 320px;
     margin: auto;
+    padding: 20px;
 }
 .view .text-doctor h3{
     color: #fff;
@@ -1411,7 +1419,6 @@ align-items: center;
 
 @media screen and (max-width:767px) {
      .view{
-
         width: 300px;
         margin: auto;
      }
@@ -1429,7 +1436,9 @@ align-items: center;
 /* Medical-team end */
 .or{
     width: 100%;
-    background:linear-gradient(180deg , rgb(230, 252, 252) , rgb(218, 249, 255) , white) ;
+    background:linear-gradient(180deg , rgb(230, 252, 252) , rgb(218, 249, 255) , white);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .map{
     width: 100%; 
@@ -1637,6 +1646,11 @@ align-items: center;
 }
 .text-our-p{
 max-width: 400px;
+}
+@media screen and (max-width : 992px) {
+    .Dantal-calling .call{
+        margin-bottom: 20px;
+    }
 }
 /* Dantal calling end */
 
